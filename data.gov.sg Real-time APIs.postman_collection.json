@@ -1,0 +1,634 @@
+{
+	"info": {
+		"_postman_id": "9c057584-f7c1-4d16-87e7-2e6f6101a28a",
+		"name": "data.gov.sg Real-time APIs",
+		"description": "# Description\n\nA collection of free Real-time APIs from data.gov.sg\n\n# Source\n\n[https://beta.data.gov.sg/datasets?formats=API&sort=Last%20updated](https://beta.data.gov.sg/datasets?formats=API&sort=Last%20updated)\n\n# Compiled by\n\nMartin Tan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4101814",
+		"_collection_link": "https://terrenus-energy-dev.postman.co/workspace/Team-Workspace~147c1d9c-b21d-410c-8fc6-503464744934/collection/4101814-9c057584-f7c1-4d16-87e7-2e6f6101a28a?action=share&creator=4101814&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Weather",
+			"item": [
+				{
+					"name": "Realtime",
+					"item": [
+						{
+							"name": "NEA Air Temperature",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/environment/air-temperature",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"environment",
+										"air-temperature"
+									],
+									"query": [
+										{
+											"key": "date_time",
+											"value": null,
+											"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+											"disabled": true
+										},
+										{
+											"key": "date",
+											"value": null,
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA Rainfall",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/environment/rainfall?date_time=2023-06-02T12:00:00&date",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"environment",
+										"rainfall"
+									],
+									"query": [
+										{
+											"key": "date_time",
+											"value": "2023-06-02T12:00:00",
+											"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)"
+										},
+										{
+											"key": "date",
+											"value": null,
+											"description": "YYYY-MM-DD"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "NEA Relative Humidity",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/environment/relative-humidity?date_time&date",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"environment",
+										"relative-humidity"
+									],
+									"query": [
+										{
+											"key": "date_time",
+											"value": null,
+											"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)"
+										},
+										{
+											"key": "date",
+											"value": null,
+											"description": "YYYY-MM-DD"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Wind Direction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/environment/wind-direction",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"environment",
+										"wind-direction"
+									],
+									"query": [
+										{
+											"key": "date_time",
+											"value": null,
+											"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+											"disabled": true
+										},
+										{
+											"key": "date",
+											"value": null,
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Wind Speed",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/environment/wind-speed",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"environment",
+										"wind-speed"
+									],
+									"query": [
+										{
+											"key": "date_time",
+											"value": null,
+											"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+											"disabled": true
+										},
+										{
+											"key": "date",
+											"value": null,
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PM2.5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/environment/pm25",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"environment",
+										"pm25"
+									],
+									"query": [
+										{
+											"key": "date_time",
+											"value": null,
+											"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+											"disabled": true
+										},
+										{
+											"key": "date",
+											"value": null,
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Pollutant Standards Index (PSI)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/environment/psi",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"environment",
+										"psi"
+									],
+									"query": [
+										{
+											"key": "date_time",
+											"value": null,
+											"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+											"disabled": true
+										},
+										{
+											"key": "date",
+											"value": null,
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ultra-violet Index (UVI)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/environment/uv-index",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"environment",
+										"uv-index"
+									],
+									"query": [
+										{
+											"key": "date_time",
+											"value": null,
+											"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+											"disabled": true
+										},
+										{
+											"key": "date",
+											"value": null,
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Forecast",
+					"item": [
+						{
+							"name": "2-Hour Weather Forecast",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/environment/2-hour-weather-forecast",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"environment",
+										"2-hour-weather-forecast"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2022-05-03",
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										},
+										{
+											"key": "date_time",
+											"value": null,
+											"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "24-Hour Weather Forecast",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/environment/24-hour-weather-forecast",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"environment",
+										"24-hour-weather-forecast"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2022-05-03",
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										},
+										{
+											"key": "date_time",
+											"value": null,
+											"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4-day Weather Forecast",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/environment/4-day-weather-forecast",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"environment",
+										"4-day-weather-forecast"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2022-05-03",
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										},
+										{
+											"key": "date_time",
+											"value": null,
+											"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Transport",
+			"item": [
+				{
+					"name": "Carpark Availability (HDB)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.data.gov.sg/v1/transport/carpark-availability",
+							"protocol": "https",
+							"host": [
+								"api",
+								"data",
+								"gov",
+								"sg"
+							],
+							"path": [
+								"v1",
+								"transport",
+								"carpark-availability"
+							],
+							"query": [
+								{
+									"key": "date_time",
+									"value": null,
+									"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Taxi Availability",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.data.gov.sg/v1/transport/taxi-availability",
+							"protocol": "https",
+							"host": [
+								"api",
+								"data",
+								"gov",
+								"sg"
+							],
+							"path": [
+								"v1",
+								"transport",
+								"taxi-availability"
+							],
+							"query": [
+								{
+									"key": "date_time",
+									"value": "",
+									"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Traffic Images",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.data.gov.sg/v1/transport/traffic-images",
+							"protocol": "https",
+							"host": [
+								"api",
+								"data",
+								"gov",
+								"sg"
+							],
+							"path": [
+								"v1",
+								"transport",
+								"traffic-images"
+							],
+							"query": [
+								{
+									"key": "date_time",
+									"value": "",
+									"description": "YYYY-MM-DD[T]HH:mm:ss (SGT)",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Technology",
+			"item": [
+				{
+					"name": "IPOS Applications",
+					"item": [
+						{
+							"name": "Design Applications",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/technology/ipos/designs",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"technology",
+										"ipos",
+										"designs"
+									],
+									"query": [
+										{
+											"key": "lodgement_date",
+											"value": "",
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Patent Applications",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/technology/ipos/patents",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"technology",
+										"ipos",
+										"patents"
+									],
+									"query": [
+										{
+											"key": "lodgement_date",
+											"value": "",
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Trademark Applications",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.data.gov.sg/v1/technology/ipos/trademarks",
+									"protocol": "https",
+									"host": [
+										"api",
+										"data",
+										"gov",
+										"sg"
+									],
+									"path": [
+										"v1",
+										"technology",
+										"ipos",
+										"trademarks"
+									],
+									"query": [
+										{
+											"key": "lodgement_date",
+											"value": "",
+											"description": "YYYY-MM-DD",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
